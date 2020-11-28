@@ -1,0 +1,23 @@
+.skills {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container {
+    height: 100%;
+    background: #747474;
+    width: 90%;
+    border-radius: 20px;
+    position: absolute;
+    top: -10%;
+    z-index: 2;
+    display: flex;
+}
+
+.skills-col {
+    width: 33.33%;
+    border-right: 1px solid #eee;
+    height: 100%;
+}

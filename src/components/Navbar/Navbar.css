@@ -9,8 +9,9 @@
     display: flex;
     justify-content: space-between;
     color: #d1e8e2;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .nav-grey {

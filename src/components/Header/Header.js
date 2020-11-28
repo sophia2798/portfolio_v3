@@ -6,6 +6,12 @@ function Header() {
     const TypingComponent = () => (
         <Typing speed={150}>
             <h1 className="welcome">WELCOME</h1>
+            <div className="subheader">
+            <Typing.Speed ms={80}/>
+            <h1>MY NAME IS SOPHIA JUNG</h1>
+            <Typing.Speed ms={80}/>
+            <h2><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></h2>
+            </div>
         </Typing>
     );
 
@@ -23,10 +29,6 @@ function Header() {
             <div className="header-content">
                 <article className="typing-comp">
                     <TypingComponent/>
-                    <div className="subheader">
-                        <h1>MY NAME IS SOPHIA JUNG</h1>
-                        <h2><span className="tag">&lt;</span> FULL-STACK WEB DEVELOPER <span className="tag">&gt;</span></h2>
-                    </div>
                 </article>
             </div>
             <div className="blend"></div>

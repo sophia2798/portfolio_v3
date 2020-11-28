@@ -3,6 +3,7 @@
     width: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .header-content {
@@ -26,8 +27,8 @@
     letter-spacing: 0.25rem;
     color: #d1e8e2;
     font-weight: 1000;
-    /* font-family: 'Nerko One', cursive; */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
 }
 
 .header-background {
@@ -37,9 +38,9 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/072/376/original/network-connections-on-white-background.jpg");
+    background-image: url("../../media//backgroundimg.jpg");
     background-position: center;
-    filter: blur(3px)
+    filter: grayscale(50%);
 }
 
 .blend {
@@ -53,7 +54,7 @@
 }
 
 .subheader {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 1rem;
     line-height: 3rem;
     color: #d5dbda;
