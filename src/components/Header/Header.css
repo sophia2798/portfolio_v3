@@ -1,0 +1,7 @@
+.header-container {
+    height: 70vh;
+    background-color: lightslategrey;
+    background-position: center;
+    text-align: center;
+    padding: 1rem;
+}
