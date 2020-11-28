@@ -17,7 +17,7 @@ function Navbar() {
     return (
         <div className={`navbar-container ${show && 'nav-grey'}`}>
             <div className="nav-left">
-                <p>SOPHIA JUNG</p>
+                <p>SOPHIA <span className="last">JUNG</span></p>
             </div>
             <div className="nav-right">
                 <div className="nav-option">

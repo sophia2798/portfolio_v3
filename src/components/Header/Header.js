@@ -4,8 +4,8 @@ import Typing from "react-typing-animation";
 
 function Header() {
     const TypingComponent = () => (
-        <Typing speed={100}>
-            <h1 className="welcome">WELCOME! <br/><br/> MY NAME IS SOPHIA JUNG</h1>
+        <Typing speed={150}>
+            <h1 className="welcome">WELCOME</h1>
         </Typing>
     );
 
@@ -23,6 +23,10 @@ function Header() {
             <div className="header-content">
                 <article className="typing-comp">
                     <TypingComponent/>
+                    <div className="subheader">
+                        <h1>MY NAME IS SOPHIA JUNG</h1>
+                        <h2><span className="tag">&lt;</span> FULL-STACK WEB DEVELOPER <span className="tag">&gt;</span></h2>
+                    </div>
                 </article>
             </div>
             <div className="blend"></div>
