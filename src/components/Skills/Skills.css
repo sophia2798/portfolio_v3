@@ -15,6 +15,7 @@
     z-index: 2;
     display: flex;
     box-shadow: 0 5px 5px 0 rgba(39,39, 39, 0.5), 0 0 0 1px #747474;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .skills-col {

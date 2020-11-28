@@ -5,7 +5,7 @@ import Skills from "../Skills/Skills";
 
 function About() {
     return (
-        <div className="about-container">
+        <div className="about-container" id="about-hash">
             <section className="short-bio">
                 <img className="bio-pic" src={bioImg} alt="bio picture"/>
                 <div className="bio-content">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -18,14 +19,14 @@ function Navbar() {
     return (
         <div className={`navbar-container ${show && 'nav-grey'}`}>
             <div className="nav-left">
-                <p>SOPHIA <span className="last">JUNG</span></p>
+                <HashLink to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
             </div>
             <div className="nav-right">
                 <div className="nav-option">
-                    <Link to="#" id="about">ABOUT</Link>
+                    <HashLink to="/#about-hash" id="about">ABOUT</HashLink>
                 </div>
                 <div className="nav-option">
-                    <Link to="#" id="portfolio">PORTFOLIO</Link>
+                    <HashLink to="/#portfolio-hash" id="portfolio">PORTFOLIO</HashLink>
                 </div>
                 <div className="nav-option">
                     <Link to="#" id="resume">RESUME</Link>

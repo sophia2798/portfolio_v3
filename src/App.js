@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
         <Navbar/>
         <Header/>
         <About/>
+        <Portfolio/>
         <div className="body">
           
         </div>

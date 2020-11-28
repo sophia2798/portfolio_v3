@@ -16,7 +16,7 @@ function Header() {
     );
 
     return (
-        <div className="header-container">
+        <div className="header-container" id="header-hash">
             <div className="header-background">
                 <div className="circle circle1"></div>
                 <div className="circle circle2"></div>
