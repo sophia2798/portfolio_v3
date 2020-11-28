@@ -25,7 +25,7 @@
 .welcome {
     font-size: 12vw;
     letter-spacing: 0.25rem;
-    color: #d1e8e2;
+    color: white;
     font-weight: 1000;
     font-family: 'Josefin Sans', sans-serif;
     /* font-family: 'Quicksand', sans-serif; */
@@ -40,7 +40,7 @@
     overflow: hidden;
     background-image: url("../../media//backgroundimg.jpg");
     background-position: center;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 .blend {
