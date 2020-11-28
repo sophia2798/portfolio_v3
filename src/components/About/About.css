@@ -1,5 +1,6 @@
 .about-container {
     background: #eee;
+    position:
 }
 
 .short-bio {
@@ -34,4 +35,10 @@
 .bio-content h1 {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.blend {
+    width: 100%;
+    height: 6rem;
+    background: red;
 }

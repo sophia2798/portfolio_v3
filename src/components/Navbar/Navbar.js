@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -21,16 +22,16 @@ function Navbar() {
             </div>
             <div className="nav-right">
                 <div className="nav-option">
-                    ABOUT
+                    <Link to="#" id="about">ABOUT</Link>
                 </div>
                 <div className="nav-option">
-                    PORTFOLIO
+                    <Link to="#" id="portfolio">PORTFOLIO</Link>
                 </div>
                 <div className="nav-option">
-                    RESUME
+                    <Link to="#" id="resume">RESUME</Link>
                 </div>
                 <div className="nav-option">
-                    CONTACT
+                    <Link to="#" id="contact">CONTACT</Link>
                 </div>
             </div>
         </div>
