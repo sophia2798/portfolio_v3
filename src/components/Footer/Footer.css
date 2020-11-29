@@ -71,3 +71,14 @@
         margin-bottom: 2rem;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .contact-icon {
+        margin: 0 1.5rem;
+    }
+
+    .thankyou {
+        width: 90%;
+        left: 0.7%;
+    }
+}
