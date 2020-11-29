@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faUser, faFileAlt, faComment, faFolderOpen} from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -39,19 +41,19 @@ function Navbar() {
             </div>
             <div className="mobile-nav">
                 <div className="mobile-nav-option">
-                    <Link to="#">HOME</Link>
+                    <HashLink to="/#header-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faHome} /></span>HOME</HashLink>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#">ABOUT</Link>
+                    <HashLink to="/#about-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faUser} /></span>ABOUT</HashLink>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#">PORTFOLIO</Link>
+                    <HashLink to="/#portfolio-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFolderOpen} /></span>PORTFOLIO</HashLink>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#">RESUME</Link>
+                    <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFileAlt} /></span>RESUME</Link>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#">CONTACT</Link>
+                    <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faComment} /></span>CONTACT</Link>
                 </div>
             </div>
         </div>

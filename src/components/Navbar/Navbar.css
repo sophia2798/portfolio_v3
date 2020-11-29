@@ -70,7 +70,7 @@ a:hover {
     .mobile-nav {
         display: block;
         width: 100%;
-        height: 2rem;
+        height: 2.4rem;
         font-family: 'Josefin Sans', sans-serif;
         position: fixed;
         bottom: 0;
@@ -82,8 +82,14 @@ a:hover {
     }
 
     .mobile-nav-option {
-        padding: 0.5rem;
-        
+        padding: 0.22rem 0.2rem;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .mobile-icon {
+        font-size: 1rem;
+        margin: 0.2rem 0;
     }
 
     .mobile-nav a {
