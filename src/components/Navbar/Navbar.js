@@ -17,22 +17,41 @@ function Navbar() {
     }, [])
 
     return (
-        <div className={`navbar-container ${show && 'nav-grey'}`}>
-            <div className="nav-left">
-                <HashLink id="sophia" to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
+        <div className="navbar-container">
+            <div className={`regular-navbar ${show && 'nav-grey'}`}>
+                <div className="nav-left">
+                    <HashLink id="sophia" to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
+                </div>
+                <div className="nav-right">
+                    <div className="nav-option">
+                        <HashLink to="/#about-hash" id="about">ABOUT</HashLink>
+                    </div>
+                    <div className="nav-option">
+                        <HashLink to="/#portfolio-hash" id="portfolio">PORTFOLIO</HashLink>
+                    </div>
+                    <div className="nav-option">
+                        <Link to="#" id="resume">RESUME</Link>
+                    </div>
+                    <div className="nav-option">
+                        <Link to="#" id="contact">CONTACT</Link>
+                    </div>
+                </div>
             </div>
-            <div className="nav-right">
-                <div className="nav-option">
-                    <HashLink to="/#about-hash" id="about">ABOUT</HashLink>
+            <div className="mobile-nav">
+                <div className="mobile-nav-option">
+                    <Link to="#">HOME</Link>
                 </div>
-                <div className="nav-option">
-                    <HashLink to="/#portfolio-hash" id="portfolio">PORTFOLIO</HashLink>
+                <div className="mobile-nav-option">
+                    <Link to="#">ABOUT</Link>
                 </div>
-                <div className="nav-option">
-                    <Link to="#" id="resume">RESUME</Link>
+                <div className="mobile-nav-option">
+                    <Link to="#">PORTFOLIO</Link>
                 </div>
-                <div className="nav-option">
-                    <Link to="#" id="contact">CONTACT</Link>
+                <div className="mobile-nav-option">
+                    <Link to="#">RESUME</Link>
+                </div>
+                <div className="mobile-nav-option">
+                    <Link to="#">CONTACT</Link>
                 </div>
             </div>
         </div>

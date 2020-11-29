@@ -2,6 +2,7 @@ import React from 'react';
 import "./About.css";
 import bioImg from "../../media/bioimg.JPG";
 import Skills from "../Skills/Skills";
+import Portfolio from "../Portfolio/Portfolio";
 
 function About() {
     return (
@@ -14,9 +15,10 @@ function About() {
                 </div>
             </section>
             <div className="blend">
-                
+
             </div>
             <Skills/>
+            <Portfolio/>
         </div>
     )
 }

@@ -41,3 +41,50 @@
 .languages h3, .tools h3 {
     letter-spacing: 0.2rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .skills {
+        height: 67vh;
+    }
+}
+
+@media only screen and (max-height: 1019px) {
+    .skills {
+        height: 65vh;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    .skills-container {
+        height: 85%;
+        top: -15%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .skills-container {
+        top: -10%;
+    }
+
+    .faIcon {
+        font-size: 3rem;
+    }
+
+    .skills-container h2 {
+        font-size: 1.1rem;
+    }
+
+    .languages h3, .tools h3 {
+        letter-spacing: 0.01rem;
+        font-size: 0.8rem;
+    }
+
+    .languages h4, .tools h4 {
+        line-height: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    .middot {
+        display: none;
+    }
+}

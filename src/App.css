@@ -2,8 +2,12 @@
   margin: 0;
 }
 
-.body {
+body {
+  background-color: #5d5c61;
+}
+
+/* .body {
   height: 50vh;
   background-color: #5d5c61;
   width: 100%;
-}
+} */

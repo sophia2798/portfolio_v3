@@ -40,7 +40,7 @@
     overflow: hidden;
     background-image: url("../../media//backgroundimg.jpg");
     background-position: center;
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(2px)
 }
 
 .subheader {
@@ -110,6 +110,35 @@
 
     .welcome {
         font-size: 4.2rem;
+    }
+
+    .header-content {
+        background-color: rgba(39,39,39,0.85);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .subheader {
+        line-height: 2.5rem;
+    }
+    
+    .subheader h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .subheader h2 {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    .tag {
+        font-size: 1.2rem;
+    }
+
+    .welcome {
+        font-size: 3.9rem;
+        letter-spacing: 0.01rem;
     }
 
     .header-content {

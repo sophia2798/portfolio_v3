@@ -1,4 +1,4 @@
-.navbar-container {
+.regular-navbar {
     height: 4rem;
     width: 100%;
     background: transparent;
@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-.navbar-container a {
+.regular-navbar a {
     color: white;
     text-decoration: none;
 }
@@ -56,8 +56,46 @@ a:hover {
     margin: 0 10px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 @media only screen and (max-width: 529px) {
     .last {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .mobile-nav {
+        display: block;
+        width: 100%;
+        height: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background: #aaabb8;
+    }
+
+    .mobile-nav-option {
+        padding: 0.5rem;
+        
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar-container {
+        bottom: 0;
+    }
+
+    .regular-navbar, .nav-grey {
         display: none;
     }
 }
