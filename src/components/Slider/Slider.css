@@ -39,6 +39,7 @@
     padding: 0.5rem;
     font-family: 'Work Sans', sans-serif;
     transition: 0.5s ease-in-out;
+    font-size: 1.14rem;
 }
 
 .slider-info {
@@ -136,5 +137,50 @@
 
     .slider-container {
         margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .slider-img {
+        width: 50%;
+        left: 25%;
+        top: 0;
+    }
+    .overlay {
+        width: 50%;
+        left: 25%;
+        top: 0;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .slider-img {
+        width: 40%;
+        left: 30%;
+        top: 0;
+    }
+
+    .overlay {
+        width: 40%;
+        left: 30%;
+        top: 0;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .slider-img {
+        width: 32%;
+        left: 34%;
+        height: 42vh;
+    }
+
+    .overlay {
+        width: 32%;
+        left: 34%;
+        height: 42vh;
+    }
+
+    .slider-info {
+        margin-top: 8rem;
     }
 }

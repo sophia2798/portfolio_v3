@@ -11,7 +11,7 @@ function Footer() {
             <div className="contact-info">
                 <a target="_blank" href="https://github.com/sophia2798" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faGithub}/></a>
                 <a target="_blank" href="https://www.facebook.com/sophia.jung.9" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faFacebook}/></a>
-                <a target="_blank" href="https://www.linkedin.com/in/sophia2798/" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faLinkedin}/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sophia2798/" className="contact-links"><FontAwesomeIcon className="contact-icon" id="linkedin-icon" icon={faLinkedin}/></a>
                 <a target="_blank" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faEnvelope}/></a>
             </div>
             <p><small>CREATED BY SOPHIA JUNG &#169; 2020</small></p>
