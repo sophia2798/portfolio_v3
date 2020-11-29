@@ -9,8 +9,8 @@ function Header() {
             <div className="subheader">
             <Typing.Speed ms={80}/>
             <h1>MY NAME IS SOPHIA JUNG</h1>
-            <Typing.Speed ms={60}/>
-            <h2><span style={{color:'#d5dbda'}}><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></span> <span style={{color:'#d5dbda'}}><span className="tag">&lt;</span> DESIGNER <span className="tag">&gt;</span></span> <span style={{color:'#d5dbda'}}><span className="tag">&lt;</span> DREAMER <span className="tag">&gt;</span></span></h2>
+            <Typing.Speed ms={50}/>
+            <h2><span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DESIGNER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DREAMER <span className="tag">&gt;</span></span></h2>
             </div>
         </Typing>
     );

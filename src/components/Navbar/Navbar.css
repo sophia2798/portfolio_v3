@@ -19,28 +19,19 @@
     text-decoration: none;
 }
 
-#about:hover {
-    color: #ff652f;
+a:hover {
+    color: #aaabb8;
     text-decoration: none;
 }
 
-#portfolio:hover {
-    color: #ffe400;
+.nav-grey a:hover {
+    color: #def2f1;
     text-decoration: none;
 }
 
-#resume:hover {
-    color: #14a76c;
-    text-decoration: none;
-}
-
-#contact:hover {
-    color: #747474;
-    text-decoration: none;
-}
 
 .nav-grey {
-    background-color: #b0b2b5;
+    background-color: #aaabb8;
     color: #272727;
 }
 

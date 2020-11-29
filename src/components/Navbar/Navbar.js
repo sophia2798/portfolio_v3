@@ -19,7 +19,7 @@ function Navbar() {
     return (
         <div className={`navbar-container ${show && 'nav-grey'}`}>
             <div className="nav-left">
-                <HashLink to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
+                <HashLink id="sophia" to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
             </div>
             <div className="nav-right">
                 <div className="nav-option">
