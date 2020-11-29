@@ -1,0 +1,47 @@
+.slider-img {
+    width: 60vw;
+    border-radius: 20px;
+    border: 8px solid #7395ae;
+    transition: 1s ease-in-out;
+    position: absolute;
+    top: 0;
+}
+
+.slider-container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    margin: 3rem 0 0.5rem 0;
+    height: 40vh;
+}
+
+.slider-container h1 {
+    width: 5rem;
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+}
+
+.slider-container h1:hover {
+    cursor: pointer;
+}
+
+.slider-info {
+    font-family: 'Work Sans', sans-serif;
+    width: 60vw;
+    height: 30vh;
+    margin: 0 auto 3rem auto;
+    border: 8px solid #7395ae;
+    border-radius: 20px;
+    position: relative;
+    display: table;
+    font-size: 1.2rem;
+}
+
+.slider-info-block {
+    position: absolute;
+    text-align: center;
+    padding: 2vw;
+    display: table-cell;
+    vertical-align: middle;
+}
