@@ -109,8 +109,11 @@ function Slider() {
                 <h1 className="arrows" onClick={() => countSlider(counter)} style={{right:'10%'}}>&gt;</h1>
             </div>
             <div className="slider-info">
-                <h3>CLICK TO VIEW MORE INFORMATION ABOUT THE PROJECT!</h3>
-                <h3><LanguageIcon className="material-icon"/> <GitHubIcon className="material-icon"/></h3>
+                <h3>CLICK THE GIF TO VIEW MORE INFORMATION ABOUT THE PROJECT!</h3>
+                <div style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>
+                    <section className="material-links"><a target="_blank" className="info-link" {...(counter === 1) ? {href: "https://sj-guardian-react.herokuapp.com/"} : (counter === 2) ? {href: "https://sophia2798.github.io/covid_stats/"} : (counter === 3) ? {href: "https://secret-meadow-51163.herokuapp.com/"} : (counter === 4) ? {href: "https://sj-employee-directory.herokuapp.com/"} :(counter === 5) ? {href: "https://sophia2798.github.io/password_generator/"} : (counter === 6) ? {href: "https://sophia2798.github.io/work_planner/"} : null} ><LanguageIcon className="material-icon"/></a>VIEW DEPLOYED PAGE</section>
+                    <section className="material-links"><a target="_blank" className="info-link" {...(counter === 1) ? {href: "https://github.com/sophia2798/project3_frontend"} : (counter === 2) ? {href: "https://github.com/sophia2798/covid_stats"} : (counter === 3) ? {href: "https://github.com/sophia2798/social_petwork"} : (counter === 4) ? {href: "https://github.com/sophia2798/employee_directory"} :(counter === 5) ? {href: "https://github.com/sophia2798/password_generator"} : (counter === 6) ? {href: "https://github.com/sophia2798/work_planner"} : null} ><GitHubIcon className="material-icon"/></a>VIEW GITHUB REPO</section>
+                </div>
             </div>
         </div>
     )

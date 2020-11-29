@@ -66,3 +66,31 @@
     cursor: pointer;
     transform: scale(1.2); 
 }
+
+.material-icon {
+    font-size: 3rem !important;
+    margin: 1rem auto !important;
+    color: white;
+}
+
+.material-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: white;
+}
+
+.material-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.material-links:hover {
+    color: white;
+}
+
+.info-link:hover {
+    color: white;
+}
