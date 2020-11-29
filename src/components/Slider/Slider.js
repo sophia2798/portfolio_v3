@@ -67,7 +67,7 @@ function Slider() {
                     </div>
                 </div>
                 <div className="slide-img-container">
-                    <img style={(counter === 3) ? {opacity: 1, borderColor:'#d1e8e2'} : {opacity: 0}} src={petwork} alt="petwork gif" className="slider-img"/>
+                    <img style={(counter === 3) ? {opacity: 1, borderColor:'#739a95'} : {opacity: 0}} src={petwork} alt="petwork gif" className="slider-img"/>
                     <div style={(opacity && counter === 3) ? {opacity:1} : {opacity:0}} className="overlay" onClick={toggleOpacity}>
                         <h3>THE SOCIAL PETWORK</h3>
                         <br/>
@@ -97,7 +97,7 @@ function Slider() {
                     </div>
                 </div>
                 <div className="slide-img-container">
-                    <img style={(counter === 6) ? {opacity: 1, borderColor:'#d1e8e2'} : {opacity: 0}} src={planner} alt="planner gif" className="slider-img"/>
+                    <img style={(counter === 6) ? {opacity: 1, borderColor:'#739a95'} : {opacity: 0}} src={planner} alt="planner gif" className="slider-img"/>
                     <div style={(opacity && counter === 6) ? {opacity:1} : {opacity:0}} className="overlay" onClick={toggleOpacity}>
                         <h3>WORK DAY PLANNER</h3>
                         <br/>

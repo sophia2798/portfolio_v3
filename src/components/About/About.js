@@ -3,6 +3,7 @@ import "./About.css";
 import bioImg from "../../media/bioimg.JPG";
 import Skills from "../Skills/Skills";
 import Portfolio from "../Portfolio/Portfolio";
+import Footer from "../Footer/Footer";
 
 function About() {
     return (
@@ -19,6 +20,7 @@ function About() {
             </div>
             <Skills/>
             <Portfolio/>
+            <Footer/>
         </div>
     )
 }

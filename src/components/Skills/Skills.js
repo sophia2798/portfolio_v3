@@ -40,7 +40,7 @@ function Skills() {
                     <FontAwesomeIcon className="faIcon" icon={faAtom} />
                     <h2>PHYSICS</h2>
                     <div className="languages">
-                    <h3><span className="middot">&middot;&middot;&middot;</span> TOPICS <span className="middot">&middot;&middot;&middot;</span></h3>
+                    <h3><span className="middot">&middot;&middot;&middot;</span> INTERESTS <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
                     <h4>DARK MATTER/DARK ENERGY<br/>PROTON THERAPY<br/>E&amp;M<br/>LIGHT SAILS<br/>OPTICS<br/>THERMODYNAMICS</h4>
                     </div>
