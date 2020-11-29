@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer" id="contact-hash">
             <div className="contact-info">
                 <a target="_blank" href="https://github.com/sophia2798" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faGithub}/></a>
                 <a target="_blank" href="https://www.facebook.com/sophia.jung.9" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faFacebook}/></a>

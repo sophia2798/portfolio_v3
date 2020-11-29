@@ -35,7 +35,7 @@ function Navbar() {
                         <Link to="#" id="resume">RESUME</Link>
                     </div>
                     <div className="nav-option">
-                        <Link to="#" id="contact">CONTACT</Link>
+                        <HashLink to="/#contact-hash" id="contact">CONTACT</HashLink>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ function Navbar() {
                     <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFileAlt} /></span>RESUME</Link>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faComment} /></span>CONTACT</Link>
+                    <HashLink to="/#contact-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faComment} /></span>CONTACT</HashLink>
                 </div>
             </div>
         </div>
