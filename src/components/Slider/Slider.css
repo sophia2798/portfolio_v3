@@ -94,3 +94,46 @@
 .info-link:hover {
     color: white;
 }
+
+@media only screen and (max-width: 414px) {
+    .slider-info {
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+
+    .material-links {
+        font-size: 0.6rem;
+    }
+
+    #arrow-right {
+        right: 30% !important;
+    }
+
+    #arrow-left {
+        left: 30% !important;
+    }
+
+    .arrows {
+        font-size: 3rem;
+        top: 100%;
+    }
+
+    .slider-img {
+        top: 15%;
+        left: 3%;
+        width: 90%;
+        height: 70%;
+    }
+
+    .overlay {
+        top: 15%;
+        left: 3%;
+        width: 90%;
+        height: 70%;
+        font-size: 0.5rem;
+    }
+
+    .slider-container {
+        margin-top: 0;
+    }
+}

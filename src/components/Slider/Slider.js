@@ -45,7 +45,7 @@ function Slider() {
     return (
         <div className="slider">
             <div className="slider-container">
-                <h1 className="arrows" onClick={() => countDownSlider(counter)} style={{left:'10%'}}>&lt;</h1>
+                <h1 className="arrows" id="arrow-left" onClick={() => countDownSlider(counter)} style={{left:'10%'}}>&lt;</h1>
                 <div className="slide-img-container">
                     <img style={(counter === 1) ? {opacity: 1} : {opacity: 0}} src={guardian} alt="guardian gif" className="slider-img"/>
                     <div style={(opacity && counter === 1) ? {opacity:1} : {opacity:0}} className="overlay" onClick={toggleOpacity}>
@@ -106,7 +106,7 @@ function Slider() {
                         <p>TOOLS: HTML, CSS, JavaScript, DOM Manipulation, localStorage, Moment.js, jQuery</p>
                     </div>
                 </div>
-                <h1 className="arrows" onClick={() => countSlider(counter)} style={{right:'10%'}}>&gt;</h1>
+                <h1 className="arrows" id="arrow-right" onClick={() => countSlider(counter)} style={{right:'10%'}}>&gt;</h1>
             </div>
             <div className="slider-info">
                 <h3>CLICK THE GIF TO VIEW MORE INFORMATION ABOUT THE PROJECT!</h3>
