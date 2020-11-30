@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function Contact() {
+    const [contactForm, setContactForm] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+
+    const handleInputChange = (event) => {
+        event.preventDefault();
+        const { name, value } = event.target;
+        setContactForm({
+          ...contactForm,
+          [name]: value,
+        });
+    };
+
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        axios.post('http://localhost:9164/send', contactForm).then(response => {
+            console.log(response)
+        }).catch(err => console.log(err));
+
+        setContactForm ({
+            name: "",
+            email: "",
+            message: ""
+        })
+    }
+
     return (
         <div className="contact">
             {/* <h1 id="contact-header">CONTACT</h1> */}
@@ -14,20 +42,20 @@ function Contact() {
             <div className="contact-blend"></div>
             <div className="contact-form-container">
                 <h3 style={{color:'#272727',textAlign:'center'}}>CONTACT FORM</h3>
-                <form className="contact-form">
+                <form className="contact-form" onSubmit={handleSubmit}>
                     <div id="name-email">
                     <div className="label" style={{marginRight: "4%"}}>
                     <label htmlFor="name">FULL NAME</label>
-                    <input type="text" id="name"/>
+                    <input value={contactForm.name} onChange={handleInputChange} type="text" id="name" name="name"/>
                     </div>
                     <div className="label">
                     <label htmlFor="email">EMAIL ADDRESS</label>
-                    <input type="text" id="email"/>
+                    <input value={contactForm.email} onChange={handleInputChange} type="text" id="email" name="email"/>
                     </div>
                     </div>
                     <div id="message-label">
                     <label htmlFor="message">MESSAGE</label>
-                    <textarea type="text" id="message"/>
+                    <textarea value={contactForm.message} onChange={handleInputChange} type="text" id="message" name="message"/>
                     </div>
                     <input type="submit" id="contact-btn" value="SEND"/>
                 </form>
