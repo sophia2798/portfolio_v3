@@ -14,12 +14,12 @@ function Skills() {
                     <div className="languages">
                     <h3><span className="middot">&middot;&middot;&middot;</span> LANGUAGES <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>HTML<br/>CSS<br/>REACT.JS<br/>HANDLEBARS</h4>
+                    <h4>HTML<br/>CSS<br/>JAVASCRIPT<br/>JQUERY<br/>JSX<br/>HANDLEBARS</h4>
                     </div>
                     <div className="tools">
                     <h3><span className="middot">&middot;&middot;&middot;</span> TOOLS <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>BOOTSTRAP<br/>MATERIAL-UI<br/>MATERIALIZE<br/>GITHUB<br/>TERMINAL<br/>BULMA</h4>
+                    <h4>REACT.JS<br/>BOOTSTRAP<br/>MATERIAL-UI<br/>MATERIALIZE<br/>BULMA</h4>
                     </div>
                 </div>
                 <div className="skills-col" style={{borderRight: '1px solid #545557', color:'#7395ae'}}>
@@ -28,12 +28,12 @@ function Skills() {
                     <div className="languages">
                     <h3><span className="middot">&middot;&middot;&middot;</span> LANGUAGES <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>JAVASCRIPT<br/>JQUERY<br/>EXPRESS<br/>NODE<br/>MONGODB<br/>MYSQL</h4>
+                    <h4>JAVASCRIPT<br/>SQL<br/>MQL</h4>
                     </div>
                     <div className="tools">
                     <h3><span className="middot">&middot;&middot;&middot;</span> TOOLS <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>MYSQL WORKBENCH<br/>POSTMAN<br/>ROBO-3T<br/>MONGO ATLAS</h4>
+                    <h4>MYSQL<br/>MYSQL WORKBENCH<br/>POSTMAN<br/>MONGODB<br/>ROBO-3T<br/>MONGO ATLAS<br/>EXPRESS<br/>NODE<br/></h4>
                     </div>
                 </div>
                 <div className="skills-col" style={{color:'#b1a296'}}>
@@ -42,7 +42,7 @@ function Skills() {
                     <div className="languages">
                     <h3><span className="middot">&middot;&middot;&middot;</span> INTERESTS <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>DARK MATTER/DARK ENERGY<br/>PROTON THERAPY<br/>E&amp;M<br/>LIGHT SAILS<br/>OPTICS<br/>THERMODYNAMICS</h4>
+                    <h4>DARK MATTER/DARK ENERGY<br/>PROTON THERAPY<br/>E&amp;M<br/>LIGHT SAILS<br/>OPTICS<br/>MEDICAL PHYSICS</h4>
                     </div>
                     <div className="tools">
                     <h3><span className="middot">&middot;&middot;&middot;</span> TOOLS <span className="middot">&middot;&middot;&middot;</span></h3>

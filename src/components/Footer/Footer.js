@@ -14,14 +14,13 @@ function Footer() {
                 <a target="_blank" href="https://www.linkedin.com/in/sophia2798/" className="contact-links"><FontAwesomeIcon className="contact-icon" id="linkedin-icon" icon={faLinkedin}/></a>
                 <a target="_blank" className="contact-links"><FontAwesomeIcon className="contact-icon" icon={faEnvelope}/></a>
             </div>
-            <p><small>CREATED BY SOPHIA JUNG &#169; 2020</small></p>
+            <p id="footer-message" style={{marginBottom: '2.5rem'}}>VISIT MY SOCIALS TO LEARN MORE ABOUT ME OR TO START A CONVERSATION! I CAN'T WAIT TO HEAR FROM YOU!</p>
+            <p style={{fontWeight:'bold', letterSpacing:'0.15rem'}}>SOPHIA JUNG</p>
+            <p style={{marginTop: '1rem'}}><small> &#169; COPYRIGHT 2020</small></p>
             <div style={{display:'flex', justifyContent:'center', marginTop:'0.4rem'}}>
                 <p style={{paddingTop:'0.3rem'}}><small>MADE WITH</small></p>
                 &nbsp;
                 <img id="react-logo" src={logo} alt="react logo"/>
-            </div>
-            <div className="thankyou">
-                <h2>THANK YOU FOR VIEWING MY PAGE! IF YOU WOULD LIKE TO GET IN TOUCH OR LEARN MORE ABOUT ME, FEEL FREE TO VISIT ANY OF THE LINKS BELOW!</h2>
             </div>
         </div>
     )
