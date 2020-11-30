@@ -29,7 +29,7 @@ function Navbar() {
                         <HashLink to="/#about-hash" id="about">ABOUT</HashLink>
                     </div>
                     <div className="nav-option">
-                        <HashLink to="/#portfolio-hash" id="portfolio">PORTFOLIO</HashLink>
+                        <Link to="/portfolio" id="portfolio">PORTFOLIO</Link>
                     </div>
                     <div className="nav-option">
                         <Link to="#" id="resume">RESUME</Link>
@@ -47,7 +47,7 @@ function Navbar() {
                     <HashLink to="/#about-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faUser} /></span>ABOUT</HashLink>
                 </div>
                 <div className="mobile-nav-option">
-                    <HashLink to="/#portfolio-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFolderOpen} /></span>PORTFOLIO</HashLink>
+                    <Link to="/portfolio" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFolderOpen} /></span>PORTFOLIO</Link>
                 </div>
                 <div className="mobile-nav-option">
                     <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFileAlt} /></span>RESUME</Link>

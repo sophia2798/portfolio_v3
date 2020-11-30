@@ -3,6 +3,8 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Footer from "./components/Footer/Footer";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -10,12 +12,16 @@ function App() {
   return (
     <Router>
     <div className="App">
+        <Navbar/>
         <Switch>
         <Route exact path="/">
-        <Navbar/>
-        <Header/>
-        <About/>
-      </Route>
+          <Header/>
+          <About/>
+        </Route>
+        <Route path="/portfolio">
+          <Portfolio/>
+          <Footer/>
+        </Route>
       </Switch>
     </div>
     </Router>
