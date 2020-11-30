@@ -11,6 +11,7 @@ function Contact() {
             <div className="aside">
                 <h3 id="form-h3">I'D LOVE TO HEAR ABOUT YOUR IDEAS ! FEEL FREE TO FILL OUT THE CONTACT FORM TO SEND ME AN EMAIL OR YOU CAN REACH OUT VIA MY GITHUB, FACEBOOK, OR LINKEDIN!</h3>
             </div>
+            <div className="contact-blend"></div>
             <div className="contact-form-container">
                 <h3 style={{color:'#272727',textAlign:'center'}}>CONTACT FORM</h3>
                 <form className="contact-form">

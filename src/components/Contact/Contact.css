@@ -2,16 +2,23 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     display: flex;
+    /* flex-direction: row-reverse; */
 }
 
 .aside {
     width: 30%;
-    background: #557a95;
+    background: #7395ae;
     position: relative;
 }
 
+.contact-blend {
+    display: none;
+    height: 6rem;
+    background: linear-gradient(#7395ae , #5d5c61);
+}
+
 .aside h3 {
-    color: white;
+    color: #272727;
     height: 36%;
     position: absolute;
     /* border: 1px solid white; */
@@ -146,11 +153,16 @@
 
     #form-h3 {
         font-size: 1rem;
+        padding-top: 0.8rem;
     }
 
     .contact-form-container {
         width: 80%;
-        margin-top: 3rem;
+        margin-top: 0rem;
+    }
+
+    .contact-blend {
+        display: block;
     }
 }
 
@@ -167,5 +179,16 @@
 @media only screen and (min-height: 1366px) {
     .aside {
         height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+    .aside h3 {
+        color: white;
+        height: 22%;
+        position: absolute;
+        top: 39%;
+        width: 90%;
+        padding: 0 5%;
     }
 }
