@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -20,6 +21,10 @@ function App() {
         </Route>
         <Route path="/portfolio">
           <Portfolio/>
+          <Footer/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
           <Footer/>
         </Route>
       </Switch>
