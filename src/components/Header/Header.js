@@ -1,16 +1,17 @@
 import React from 'react';
 import "./Header.css";
 import Typing from "react-typing-animation";
+import logo from "../../media/logo2.png";
 
 function Header() {
     const TypingComponent = () => (
         <Typing speed={150}>
             <h1 className="welcome">WELCOME</h1>
             <div className="subheader">
-            <Typing.Speed ms={80}/>
+            <Typing.Speed ms={60}/>
             <h1>MY NAME IS SOPHIA JUNG</h1>
             <Typing.Speed ms={50}/>
-            <h2><span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DESIGNER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DREAMER <span className="tag">&gt;</span></span></h2>
+            {/* <h2><span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DESIGNER <span className="tag">&gt;</span></span> <span style={{color:'#aaabb8'}}><span className="tag">&lt;</span> DREAMER <span className="tag">&gt;</span></span></h2> */}
             </div>
         </Typing>
     );
@@ -29,6 +30,9 @@ function Header() {
             <div className="header-content">
                 <article className="typing-comp">
                     <TypingComponent/>
+                    <div id="logo-container">
+                    <img src={logo} alt="logo" id="logo"/>
+                    </div>
                 </article>
             </div>
         </div>

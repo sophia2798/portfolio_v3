@@ -5,6 +5,8 @@ import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faFileAlt, faComment, faFolderOpen} from "@fortawesome/free-solid-svg-icons";
 import resume from "../../media/resume_09_2020.pdf";
+import logo from "../../media/logo2white.png";
+import logodark from "../../media/logo2dark.png";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -23,7 +25,7 @@ function Navbar() {
         <div className="navbar-container">
             <div className={`regular-navbar ${show && 'nav-grey'}`}>
                 <div className="nav-left">
-                    <HashLink id="sophia" to="/#header-hash">SOPHIA <span className="last">JUNG</span></HashLink>
+                    <HashLink id="sophia" to="/#header-hash">{!show ? <img src={logo} alt="logo" className="contact-logo"/> : <img src={logodark} alt="logo" className="contact-logo"/>}</HashLink>
                 </div>
                 <div className="nav-right">
                     <div className="nav-option">

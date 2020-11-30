@@ -13,6 +13,11 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     overflow: hidden;
+
+}
+
+.contact-logo {
+    height: 1.9rem;
 }
 
 .regular-navbar a {
