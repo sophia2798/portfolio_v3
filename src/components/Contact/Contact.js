@@ -22,7 +22,7 @@ function Contact() {
     const handleSubmit = event => {
         event.preventDefault();
 
-        axios.post('http://localhost:9164/send', contactForm).then(response => {
+        axios.post('https://sj-portfolio-backend.herokuapp.com/send', contactForm).then(response => {
             console.log(response)
         }).catch(err => console.log(err));
 
