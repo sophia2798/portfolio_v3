@@ -37,6 +37,10 @@
 }
 
 @media only screen and (max-width: 414px) {
+    #footer-message {
+        padding: 0 1rem;
+        line-height: 1rem;
+    }
 
     #react-logo {
         margin-bottom: 2rem;
