@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faFileAlt, faComment, faFolderOpen} from "@fortawesome/free-solid-svg-icons";
+import resume from "../../media/resume_09_2020.pdf";
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
                         <Link to="/portfolio" id="portfolio">PORTFOLIO</Link>
                     </div>
                     <div className="nav-option">
-                        <Link to="#" id="resume">RESUME</Link>
+                        <a target="_blank" href={resume}>RESUME</a>
                     </div>
                     <div className="nav-option">
                         <Link to="/contact" id="contact">CONTACT</Link>
@@ -50,7 +51,7 @@ function Navbar() {
                     <Link to="/portfolio" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFolderOpen} /></span>PORTFOLIO</Link>
                 </div>
                 <div className="mobile-nav-option">
-                    <Link to="#" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFileAlt} /></span>RESUME</Link>
+                    <a target="_blank" href={resume} style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFileAlt} /></span>RESUME</a>
                 </div>
                 <div className="mobile-nav-option">
                     <Link to="/contact" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faComment} /></span>CONTACT</Link>
