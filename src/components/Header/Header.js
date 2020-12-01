@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Header.css";
 import Typing from "react-typing-animation";
-import logo from "../../media/logo2.png";
+import logo from "../../media/logo.png";
 
 function Header() {
     const TypingComponent = () => (

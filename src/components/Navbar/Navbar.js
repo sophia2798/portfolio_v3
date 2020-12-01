@@ -5,8 +5,8 @@ import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faFileAlt, faComment, faFolderOpen} from "@fortawesome/free-solid-svg-icons";
 import resume from "../../media/resume_09_2020.pdf";
-import logo from "../../media/logo2white.png";
-import logodark from "../../media/logo2dark.png";
+import logo from "../../media/logowhite.png";
+import logodark from "../../media/logodark.png";
 
 function Navbar() {
     const [show, setShow] = useState(false);
