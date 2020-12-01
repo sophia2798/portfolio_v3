@@ -13,24 +13,24 @@ $background2: rgba(39,39,39,0.85)
 
 =keyframes( $animationName )
     @-webkit-keyframes #{$animationName} 
-        @content;
+        @content
     
     @-moz-keyframes #{$animationName} 
-        @content;
+        @content
     
     @-o-keyframes #{$animationName} 
-        @content;
+        @content
     
     @keyframes #{$animationName} 
-        @content;
+        @content
     
 
 =animation($str) 
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};      
+  -webkit-animation: #{$str}
+  -moz-animation: #{$str}
+  -ms-animation: #{$str}
+  -o-animation: #{$str}
+  animation: #{$str}   
 
 
 .header-container 
@@ -109,9 +109,9 @@ $background2: rgba(39,39,39,0.85)
         font-size: 0.8rem
 
 #logo 
-    width: 15%;
-    margin-top: 1rem;
-    opacity: 0;
+    width: 15%
+    margin-top: 1rem
+    opacity: 0
     +animation('3s linear 3.7s 1 forwards reveal')
     @media only screen and (max-width: 414px)
         width: 25%
