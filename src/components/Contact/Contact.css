@@ -1,49 +1,50 @@
 .contact {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
-    display: flex;
-    /* flex-direction: row-reverse; */
 }
 
-.aside {
+/* .aside {
     width: 30%;
     background: #7395ae;
     position: relative;
-}
+} */
 
-.contact-blend {
+/* .contact-blend {
     display: none;
     height: 6rem;
     background: linear-gradient(#7395ae , #5d5c61);
-}
+} */
 
-.aside h3 {
+/* .aside h3 {
     color: #272727;
     height: 36%;
     position: absolute;
-    /* border: 1px solid white; */
     top: 32%;
     width: 90%;
     padding: 0 5%;
-}
+} */
 
 #contact-header {
     color: white;
     text-align: center;
     font-size: 2em;
+    margin-top: 8rem;
 }
 
-#form-h3 {
+.contact-subheader {
     text-align: center;
     font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+    width: 75%;
+    margin: 1rem auto;
 }
 
 .contact-form-container {
-    width: 40%;
-    margin: 8rem auto 2rem auto;
-    background: #7395ae;
+    width: 50%;
+    margin: 0 auto 2rem auto;
+    background: transparent;
     padding: 2rem 5%;
     border-radius: 20px;
 }
@@ -52,7 +53,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    color: #272727;
+    color: white;
 }
 
 .label {
@@ -83,8 +84,8 @@
 }
 
 .contact-form input {
-    border-radius: 999px;
-    border: 2px solid #272727;
+    /* border-radius: 999px; */
+    border: 2px solid white;
     font-family: 'Work Sans', sans-serif;
     outline: none;
     font-size: 1.1rem;
@@ -93,32 +94,38 @@
 
 #message {
     height: 30vh;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     outline: none;
     padding: 1rem;
     font-family: 'Work Sans', sans-serif;
-    border: 2px solid #272727;
+    border: 2px solid white;
     font-size: 1.1rem;
     background-color: rgba(250,250,250,0.5);
 }
 
 #contact-btn {
     padding: 1rem;
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
-    color: #272727;
-    border-color: #272727;
+    color: white;
+    border-color:white;
     background: transparent;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 #contact-btn:hover {
-    color: white;
-    background-color: #272727;
+    background-color: rgba(250,250,250,0.5);
+    /* color: #272727; */
     cursor: pointer;
+}
+
+#alert {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #def2f1;
 }
 
 @media only screen and (max-width: 768px) {

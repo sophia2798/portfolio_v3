@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Contact.css";
 import axios from "axios";
+import { faAllergies } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
     const [contactForm, setContactForm] = useState({
@@ -8,6 +9,7 @@ function Contact() {
         email: "",
         message: ""
     });
+    const [alert, setAlert] = useState("");
 
 
     const handleInputChange = (event) => {
@@ -21,27 +23,39 @@ function Contact() {
 
     const handleSubmit = event => {
         event.preventDefault();
+        const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        axios.post('https://sj-portfolio-backend.herokuapp.com/send', contactForm).then(response => {
-            console.log(response)
-        }).catch(err => console.log(err));
+        if (contactForm.name === "" || contactForm.email === "" || contactForm.message === "") {
+            setAlert("incomplete");
+        }
+        else if (!pattern.test(contactForm.email)) {
+            setAlert("valid-email");
+        }
+        else {
+            axios.post('https://sj-portfolio-backend.herokuapp.com/send', contactForm).then(response => {
+                console.log(response);
+                setAlert("success");
+            }).catch(err => console.log(err));
 
-        setContactForm ({
-            name: "",
-            email: "",
-            message: ""
-        })
+            setContactForm ({
+                name: "",
+                email: "",
+                message: ""
+            })
+        }
     }
 
     return (
         <div className="contact">
-            {/* <h1 id="contact-header">CONTACT</h1> */}
-            <div className="aside">
-                <h3 id="form-h3">I'D LOVE TO HEAR ABOUT YOUR IDEAS ! FEEL FREE TO FILL OUT THE CONTACT FORM TO SEND ME AN EMAIL OR YOU CAN REACH OUT VIA MY GITHUB, FACEBOOK, OR LINKEDIN!</h3>
-            </div>
+            <h1 id="contact-header">LET'S TALK</h1>
+            <p className="contact-subheader">I'D LOVE TO HEAR ABOUT YOUR IDEAS ! FEEL FREE TO FILL OUT THE CONTACT FORM TO SEND ME AN EMAIL OR YOU CAN REACH OUT VIA MY GITHUB, FACEBOOK, OR LINKEDIN!</p>
+            <section id="alert">
+                <p style={alert==="incomplete" ? {display:'block'} : {display:'none'}}>PLEASE COMPLETELY FILL OUT THE CONTACT FORM</p>
+                <p style={alert==="valid-email" ? {display:'block'} : {display:'none'}}>PLEASE ENTER A VALID EMAIL ADDRESS</p>
+                <p style={alert==="success" ? {display:'block'} : {display:'none'}}>YOU HAVE SUCCESSFULLY SENT SOPHIA AN EMAIL!</p>
+            </section>
             <div className="contact-blend"></div>
             <div className="contact-form-container">
-                <h3 style={{color:'#272727',textAlign:'center'}}>CONTACT FORM</h3>
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div id="name-email">
                     <div className="label" style={{marginRight: "4%"}}>
@@ -65,3 +79,5 @@ function Contact() {
 }
 
 export default Contact
+
+// I'D LOVE TO HEAR ABOUT YOUR IDEAS ! FEEL FREE TO FILL OUT THE CONTACT FORM TO SEND ME AN EMAIL OR YOU CAN REACH OUT VIA MY GITHUB, FACEBOOK, OR LINKEDIN!
