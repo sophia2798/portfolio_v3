@@ -14,12 +14,12 @@ function Skills() {
                     <div className="languages">
                     <h3><span className="middot">&middot;&middot;&middot;</span> LANGUAGES <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>HTML<br/>CSS<br/>JAVASCRIPT<br/>JQUERY<br/>JSX<br/>HANDLEBARS</h4>
+                    <h4>HTML<br/>CSS<br/>JAVASCRIPT<br/>JQUERY<br/>JSX<br/>HANDLEBARS<br/>SCSS/SASS</h4>
                     </div>
                     <div className="tools">
                     <h3><span className="middot">&middot;&middot;&middot;</span> TOOLS <span className="middot">&middot;&middot;&middot;</span></h3>
                     <br/>
-                    <h4>REACT.JS<br/>BOOTSTRAP<br/>MATERIAL-UI<br/>MATERIALIZE<br/>BULMA</h4>
+                    <h4>REACT.JS<br/>BOOTSTRAP<br/>MATERIAL-UI<br/>MATERIALIZE</h4>
                     </div>
                 </div>
                 <div className="skills-col" style={{borderRight: '1px solid #545557', color:'#7395ae'}}>
