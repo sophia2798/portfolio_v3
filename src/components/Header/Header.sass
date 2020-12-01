@@ -1,0 +1,132 @@
+$background: rgba(39,39,39,0.93)
+$font: 'Josefin Sans', sans-serif
+$light-grey: #aaabb8
+$background2: rgba(39,39,39,0.85)
+
+=position 
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+
+
+=keyframes( $animationName )
+    @-webkit-keyframes #{$animationName} 
+        @content;
+    
+    @-moz-keyframes #{$animationName} 
+        @content;
+    
+    @-o-keyframes #{$animationName} 
+        @content;
+    
+    @keyframes #{$animationName} 
+        @content;
+    
+
+=animation($str) 
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+
+
+.header-container 
+    height: 100vh
+    width: 100%
+    text-align: center
+    position: relative
+    overflow: hidden
+
+.header-content
+    +position
+    background-color: $background
+    display: table
+    z-index: 0
+    @media only screen and (max-width: 500px)
+        background-color: $background2
+
+.typing-comp 
+    display: table-cell
+    vertical-align: middle
+
+.welcome 
+    font-size: 12vw
+    letter-spacing: 0.25rem
+    color: white
+    font-weight: 1000
+    font-family: $font
+    @media only screen and (max-width: 780px)
+        font-size: 5.5rem
+    @media only screen and (max-width: 500px)
+        font-size: 4.2rem
+    @media only screen and (max-width: 414px)
+        font-size: 3.9rem
+        letter-spacing: 0.1rem
+
+
+.header-background 
+    +position
+    overflow: hidden
+    background-image: url("../../media//backgroundimg.jpg")
+    background-position: center
+    filter: grayscale(100%) blur(2px)
+
+.subheader 
+    font-family: $font
+    margin-top: 1rem
+    line-height: 3rem
+    color: $light-grey
+    text-align: center
+    @media only screen and (max-width: 780px)
+        line-height: 3rem
+    @media only screen and (max-width: 414px)
+        line-height: 2.5rem
+
+.subheader h1 
+    font-size: 3vw
+    font-weight: 500
+    @media only screen and (max-width: 780px)
+        font-size: 2rem
+        font-weight: 500
+    @media only screen and (max-width: 500px)
+        font-size: 1.5rem
+    @media only screen and (max-width: 414px)
+        font-size: 1.4rem
+
+
+.subheader h2 
+    font-size: 2vw
+    font-weight: 500
+    @media only screen and (max-width: 780px)
+        font-size: 1.5rem
+        font-weight: 500
+    @media only screen and (max-width: 500px)
+        font-size: 1rem
+    @media only screen and (max-width: 414px)
+        font-size: 0.8rem
+
+#logo 
+    width: 15%;
+    margin-top: 1rem;
+    opacity: 0;
+    +animation('3s linear 3.7s 1 forwards reveal')
+
+
+.tag
+    @media only screen and (max-width: 780px)
+        font-size: 2.2rem
+    @media only screen and (max-width: 500px)
+        font-size: 1.5rem
+    @media only screen and (max-width: 414px)
+        font-size: 1.2rem
+
++keyframes(reveal) 
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+    

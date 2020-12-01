@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Header.css";
+import "./Header.sass";
 import Typing from "react-typing-animation";
 import logo from "../../media/logo.png";
 
