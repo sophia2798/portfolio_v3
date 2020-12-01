@@ -18,6 +18,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.horz {
+    display: none;
+}
+
 .skills-col {
     width: 33.33%;
     max-height: 100%;
@@ -87,10 +91,62 @@
     .middot {
         display: none;
     }
+
+    .skills-header {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 33.33%;
+        justify-content: center;
+    }   
+
+    .lang-tools {
+        width: 66.66%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .languages h3 {
+        line-height: 0.5rem;
+    }
+
+    .languages, .tools {
+        margin-top: 0;
+        line-height: 0.5rem;
+    }
+
+    #atom {
+        margin: 1.5rem auto !important;
+    }
+
+    .vert {
+        display: none;
+    }
+
+    .horz {
+        display: block;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-col {
+        height: 33.33%;
+        width: 96%;
+        display: flex;
+        padding: 1rem 0.5rem;
+        border-bottom: 1px solid #545557;
+        border-right: none !important;
+    }
+
+    #col3 {
+        border-bottom: none;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .skills {
-        height: 75vh;
+        height: 80vh;
     }
 }
