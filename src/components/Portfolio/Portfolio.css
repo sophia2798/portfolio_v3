@@ -18,3 +18,9 @@
         margin-top: 12rem;
     }
 }
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+    .portfolio-container {
+        margin-top: 8rem;
+    }
+}
