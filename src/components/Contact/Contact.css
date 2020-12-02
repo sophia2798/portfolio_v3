@@ -134,7 +134,7 @@
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     .contact-subheader {
         font-size: 0.9rem;
         width: 90%;
@@ -158,7 +158,7 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
     #form-h3 {
         font-size: 0.7rem;
     }

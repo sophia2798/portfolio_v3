@@ -6,7 +6,7 @@
     padding-bottom: 1rem;
     font-family: 'Josefin Sans', sans-serif;
     color: #557a95;
-    position: relative;
+    flex-shrink: 0;
 }
 
 #react-logo {
@@ -36,7 +36,7 @@
     font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     #footer-message {
         padding: 0 1rem;
         line-height: 1rem;
@@ -47,7 +47,7 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
     .contact-icon {
         margin: 0 1rem;
     }

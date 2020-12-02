@@ -72,7 +72,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     .mobile-nav {
         display: block;
         width: 100%;
