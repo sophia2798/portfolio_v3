@@ -24,3 +24,9 @@
         margin-top: 8rem;
     }
 }
+
+@media only screen and (width: 820px) and (height: 1180px) {
+    .portfolio-container {
+        padding: 0 1rem;
+    }
+}
