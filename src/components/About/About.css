@@ -25,7 +25,8 @@
 }
 
 .bio-pic {
-    width: 25%;
+    width: 25vw;
+    height: calc(25vw / 0.75);
     /* border-radius: 50%; */
     border-radius: 20px;
     margin-right: 1rem;
@@ -56,27 +57,47 @@
     /* position: relative; */
 }
 
-@media only screen and (max-width: 768px) {
-    .bio-content {
-        font-size: 1.05rem;
+@media only screen and (width: 1024px) and (height: 1366px) {
+    .short-bio {
+        flex-direction: column;
+    }
+
+    .bio-pic {
+        margin: 0 auto;
+        height: auto;
+        width: 30%;
+        border-radius: 50%;
     }
 
     .bio-content h1 {
-        font-size: 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
     }
 
     .tag {
-        font-size: 1.4rem;
+        font-size: 3rem;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+    .short-bio {
+        flex-direction: column;
+    }
+
+    .bio-pic {
+        margin: 0 auto;
+        height: auto;
+        width: 30%;
+        border-radius: 50%;
+    }
+
     .bio-content h1 {
-        font-size: 1.4rem;
+        margin-top: 1rem;
+        font-size: 1.6rem;
     }
 
     .tag {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -123,9 +144,8 @@
     }
 }
 
-/* SURFACE PRO */
-@media only screen and (width: 1280px) and (height: 720px) {
-    .short-bio {
-        padding-bottom: 16rem;
+@media only screen and (max-height: 1005px) {
+    .bio-content p {
+        font-size: 1.7rem;
     }
 }

@@ -49,6 +49,10 @@ $main-font: 'Josefin Sans', sans-serif;
 
 .contact-logo {
     height: 1.9rem;
+    &:hover {
+        transform: scale(1.1);
+    }
+    transition: 0.2s ease-in-out;
 }
 
 a:hover {
