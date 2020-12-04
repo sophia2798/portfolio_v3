@@ -1,0 +1,44 @@
+$font: 'Josefin Sans', sans-serif;
+
+.MuiCardHeader-title {
+    font-size: 1.43rem !important;
+    font-family: $font !important;
+    font-weight: bold !important;
+    color: white !important;
+    line-height: 0.5 !important;
+}
+
+.icon-img {
+    height: 20px;
+}
+
+.cards {
+    padding: 1rem;
+    display: flex;
+    // justify-content: space-evenly;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    background-color: #272727 !important;
+    border-radius: 10px !important;
+}
+
+.test {
+    width: 46%;
+    margin: 2%;
+}
+
+.info-icon {
+    font-size: 2rem !important;
+    &:hover {
+        transform: scale(1.2)
+    };
+    transition: 0.25s ease-in-out !important;
+}
+
+.expand-info {
+    color: white !important;
+    font-family: $font !important;
+}
