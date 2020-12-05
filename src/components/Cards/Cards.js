@@ -17,6 +17,8 @@ import guardianscreen from "../../media/guardian-screenshot.png"
 import petworkscreen from "../../media/petwork-screenshot.png"
 import employeescreen from "../../media/employee-screenshot.png"
 import covidscreen from "../../media/covid-screenshot.png"
+import LanguageIcon from '@material-ui/icons/Language';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import "./Cards.scss";
 
 const useStyles = makeStyles((theme) => ({
@@ -38,6 +40,8 @@ function Cards() {
           id: 1,
           icon: guardianicon,
           screenshot: guardianscreen,
+          repo: "https://github.com/sophia2798/project3_frontend",
+          deploy: "https://sj-guardian-react.herokuapp.com/",
       },
       {
           title: "THE SOCIAL PETWORK",
@@ -46,6 +50,8 @@ function Cards() {
           id: 2,
           icon: petworkicon,
           screenshot: petworkscreen,
+          repo: "https://github.com/sophia2798/social_petwork",
+          deploy: "https://secret-meadow-51163.herokuapp.com/",
       },
       {
           title: "COVID-19 STATISTICS",
@@ -54,6 +60,8 @@ function Cards() {
           id: 3,
           icon: covidicon,
           screenshot: covidscreen,
+          repo: "https://github.com/sophia2798/covid_stats",
+          deploy: "https://sophia2798.github.io/covid_stats/",
       },
       {
           title: "EMPLOYEE DIRECTORY",
@@ -62,6 +70,8 @@ function Cards() {
           id: 4,
           icon: employeeicon,
           screenshot: employeescreen,
+          repo: "https://github.com/sophia2798/employee_directory",
+          deploy: "https://sj-employee-directory.herokuapp.com/",
       },
   ]
 
@@ -86,7 +96,7 @@ function Cards() {
                 aria-expanded={expanded === i}
                 aria-label="show more"
                 >
-                <InfoOutlinedIcon className="info-icon" style={{color: 'white'}}/>
+                <InfoOutlinedIcon className="info-icon"/>
                 </IconButton>
             }
             title={project.title}
@@ -108,6 +118,10 @@ function Cards() {
                 <Typography className="expand-info" paragraph>
                     <h3>TOOLS</h3>
                     {project.tools}
+                </Typography>
+                <Typography paragraph className="git-deployed-icons">
+                    <a target="_blank" href={project.repo}><GitHubIcon className="git-icon"/></a>
+                    <a target="_blank" href={project.deploy}><LanguageIcon className="deploy-icon"/></a>
                 </Typography>
             </CardContent>
             </Collapse>
