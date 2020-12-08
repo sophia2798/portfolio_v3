@@ -40,7 +40,7 @@ function Cards() {
           id: 1,
           icon: guardianicon,
           screenshot: guardianscreen,
-          repo: "https://github.com/sophia2798/project3_frontend",
+          repo: "https://github.com/sophia2798/guardian_frontend",
           deploy: "https://sj-guardian-react.herokuapp.com/",
       },
       {

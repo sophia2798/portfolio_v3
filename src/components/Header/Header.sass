@@ -70,11 +70,15 @@ $background2: rgba(39,39,39,0.85)
 
 
 .header-background 
-    +position
+    position: absolute
+    top: -10%
+    left: -10%
+    height: 125%
+    width: 125%
     overflow: hidden
     background-image: url("../../media//backgroundimg.jpg")
     background-position: center
-    filter: grayscale(100%) blur(2px)
+    filter: grayscale(50%) blur(1px)
 
 .subheader 
     font-family: $font
