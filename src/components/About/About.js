@@ -9,7 +9,9 @@ function About() {
         <div className="about-container" id="about-hash">
             <section className="short-bio">
                 <div className="bio-content-container">
-                <img className="bio-pic" src={bioImg} alt="bio picture"/>
+                <div className="bio-pic" style={{backgroundImage: `url(${bioImg})`}}>
+                </div>
+                {/* <img className="bio-pic" src={bioImg} alt="bio picture"/> */}
                 <div className="bio-content">
                     <h1><span style={{color:'white'}}><span className="tag">&lt;</span> DEVELOPER <span className="tag">&gt;</span></span> <span style={{color:'white'}}><span className="tag">&lt;</span> DESIGNER <span className="tag">&gt;</span></span> <span style={{color:'white'}}><span className="tag">&lt;</span> DREAMER <span className="tag">&gt;</span></span></h1>
                     <h1 id="bio-small-h1">

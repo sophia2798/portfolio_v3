@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faFileAlt, faComment, faFolderOpen} from "@fortawesome/free-solid-svg-icons";
 import resume from "../../media/resume_09_2020.pdf";
@@ -25,11 +24,11 @@ function Navbar() {
         <div className="navbar-container">
             <div className={`regular-navbar ${show && 'nav-grey'}`}>
                 <div className="nav-left">
-                    <HashLink id="sophia" to="/#header-hash">{!show ? <img src={logo} alt="logo" className="contact-logo"/> : <img src={logodark} alt="logo" className="contact-logo"/>}</HashLink>
+                    <Link id="sophia" to="/">{!show ? <img src={logo} alt="logo" className="contact-logo"/> : <img src={logodark} alt="logo" className="contact-logo"/>}</Link>
                 </div>
                 <div className="nav-right">
                     <div className="nav-option">
-                        <HashLink to="/#about-hash" id="about">ABOUT</HashLink>
+                        <Link to="/about" id="about">ABOUT</Link>
                     </div>
                     <div className="nav-option">
                         <Link to="/portfolio" id="portfolio">PORTFOLIO</Link>
@@ -44,10 +43,10 @@ function Navbar() {
             </div>
             <div className="mobile-nav">
                 <div className="mobile-nav-option">
-                    <HashLink to="/#header-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faHome} /></span>HOME</HashLink>
+                    <Link to="/" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faHome} /></span>HOME</Link>
                 </div>
                 <div className="mobile-nav-option">
-                    <HashLink to="/#about-hash" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faUser} /></span>ABOUT</HashLink>
+                    <Link to="/about" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faUser} /></span>ABOUT</Link>
                 </div>
                 <div className="mobile-nav-option">
                     <Link to="/portfolio" style={{display:'flex',flexDirection:'column'}}><span><FontAwesomeIcon className="mobile-icon" icon={faFolderOpen} /></span>PORTFOLIO</Link>

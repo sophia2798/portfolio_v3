@@ -17,7 +17,7 @@
     display: flex;
     box-shadow: 0 5px 5px 0 rgba(39,39, 39, 0.5), 0 0 0 1px #747474;
     font-family: 'Work Sans', sans-serif;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .horz {
@@ -29,6 +29,7 @@
     max-height: 100%;
     text-align: center;
     padding: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .faIcon {
