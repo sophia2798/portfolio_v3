@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { CSSTransition } from 'react-transition-group'
 
 function App() {
   return (
@@ -17,8 +18,6 @@ function App() {
         <Switch>
         <Route exact path="/">
           <Header/>
-        </Route>
-        <Route path="/about">
           <About/>
         </Route>
         <Route path="/portfolio">

@@ -2,13 +2,27 @@ import React from 'react';
 import "./Skills.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faCogs, faAtom } from "@fortawesome/free-solid-svg-icons";
+// import { useSpring, animated } from 'react-spring'
 
+// const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
+// const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+// const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 function Skills() {
+    // const { radians } = useSpring({
+    //     to: async next => {
+    //       while (1) await next({ radians: 2 * Math.PI })
+    //     },
+    //     from: { radians: 0 },
+    //     config: { duration: 3000 },
+    //     reset: true,
+    // });
+    // const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
+
     return (
         <div className="skills">
             <section className="skills-container">
-                <div className="skills-col" style={{borderRight: '1px solid #545557', color:'#aaabb8'}}>
+                <div className="skills-col" style={{color:'#aaabb8'}}>
                     <div className="skills-header">
                     <FontAwesomeIcon className="faIcon" icon={faLaptopCode} />
                     <h2>FRONT-END</h2>
@@ -28,7 +42,7 @@ function Skills() {
                     </div>
                     </div>
                 </div>
-                <div className="skills-col" style={{borderRight: '1px solid #545557', color:'#7395ae'}}>
+                <div className="skills-col" style={{color:'#7395ae'}}>
                     <div className="skills-header">
                     <FontAwesomeIcon className="faIcon" icon={faCogs} />
                     <h2>BACK-END</h2>

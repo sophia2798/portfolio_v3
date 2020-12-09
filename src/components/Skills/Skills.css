@@ -8,16 +8,20 @@
 
 .skills-container {
     height: 100%;
-    background: #272727;
+    /* background: #272727; */
     width: 95%;
     border-radius: 20px;
     /* position: absolute;
     top: -5%;
     z-index: 2; */
     display: flex;
-    box-shadow: 0 5px 5px 0 rgba(39,39, 39, 0.5), 0 0 0 1px #747474;
+    /* box-shadow: 0 5px 5px 0 rgba(39,39, 39, 0.5), 0 0 0 1px #747474; */
     font-family: 'Work Sans', sans-serif;
     /* padding-bottom: 1rem; */
+}
+
+.skills-col:hover {
+    transform: scale(1.05);
 }
 
 .horz {
@@ -25,11 +29,21 @@
 }
 
 .skills-col {
-    width: 33.33%;
+    /* width: 33.33%; */
+    background: #272727;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0 rgba(39,39, 39, 0.5), 0 0 0 1px #747474;
+    width: 31.33%;
+    margin-right: 1%;
     max-height: 100%;
     text-align: center;
     padding: 0.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
+    transition: 0.3s ease-in-out;
+}
+
+#col3 {
+    margin-right: 0;
 }
 
 .faIcon {
@@ -71,6 +85,12 @@
 @media only screen and (max-width: 428px) {
     .skills-container {
         top: -10%;
+    }
+
+    .skills-col {
+        transform: none !important;
+        margin-right: 0;
+        margin-top: 2%;
     }
 
     .faIcon {

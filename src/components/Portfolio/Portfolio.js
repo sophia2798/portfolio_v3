@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Portfolio.css";
 import Cards from "../Cards/Cards";
+import Strips from "../Strips/Strips";
 
 function Portfolio() {
 
@@ -8,7 +9,7 @@ function Portfolio() {
         <div className="portfolio-container" id="portfolio-hash">
             <h1>PORTFOLIO</h1>
             <section className="card-container">
-            <Cards/>
+                <Cards/>
             </section>
         </div>
     )

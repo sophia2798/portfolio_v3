@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     font-family: 'Work Sans', sans-serif;
-    padding: 6rem 1% 3rem 1%;
+    padding: 3rem 1% 3rem 1%;
     height: fit-content;
     width: 98%;
     color: white;
@@ -41,6 +41,7 @@
     border: 4px solid white;
     background-size: cover;
     background-position: center center;
+    filter: grayscale(50%)
 }
 
 .bio-content {

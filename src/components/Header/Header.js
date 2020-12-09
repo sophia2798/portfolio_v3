@@ -15,8 +15,6 @@ const logoContainer = () => (
     </div>
 );
 
-// +animation('3s linear 3.7s 1 forwards reveal')
-
 function Header() {
     // const [items, setItems] = useState([]);
     // const items = useRef([]);
@@ -25,14 +23,14 @@ function Header() {
         from: { opacity: 0, height: 0, innerHeight: 0, transform: 'perspective(600px) rotateX(0deg)', color: '#8fa5b6' },
         enter: i => async next => {
             await sleep(3900);
-            await next({opacity: 1, height: 100, innerHeight: 100});
+            await next({opacity: 1, height: 200, innerHeight: 200});
         },
         // [
         //   { opacity: 1, height: 100, innerHeight: 100 }
         // ],
         leave: [{ color: '#c23369' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
         config: {
-            duration: 700
+            duration: 800
         }
     });
 
@@ -72,11 +70,18 @@ function Header() {
                     <TypingComponent1/>
                     {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
                         <animated.div className="transitions-item" key={key} style={rest}>
-                        <animated.div style={{height: innerHeight }}>{item}</animated.div>
+                        <animated.div style={{height: innerHeight, display:'table', width:'100%' }}>{item}</animated.div>
                         </animated.div>
                     ))}
                     <TypingComponent2/>
                 </animated.div>
+                <div className="typing-comp2">
+                    <TypingComponent1/>
+                    <TypingComponent2/>
+                    <div id="logo-container">
+                        <img src={logo} alt="logo" id="logo"/>
+                    </div>
+                </div>
             </div>
         </div>
     )

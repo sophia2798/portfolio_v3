@@ -51,6 +51,14 @@ $background2: rgba(39,39,39,0.85)
 .typing-comp 
     display: table-cell
     vertical-align: middle
+    @media only screen and (max-width: 780px)
+        display: none
+
+.typing-comp2 
+    display: none
+    @media only screen and (max-width: 780px)
+        display: table-cell
+        vertical-align: middle
 
 .welcome 
     font-size: 12vw
@@ -63,7 +71,7 @@ $background2: rgba(39,39,39,0.85)
     @media only screen and (max-width: 500px)
         font-size: 4.2rem
     @media only screen and (max-width: 428px)
-        font-size: 3.9rem
+        font-size: 3.8rem
         letter-spacing: 0.1rem
     @media only screen and (max-width: 320px)
         font-size: 3.4rem
@@ -90,6 +98,8 @@ $background2: rgba(39,39,39,0.85)
         line-height: 3rem
     @media only screen and (max-width: 428px)
         line-height: 2.5rem
+    @media only screen and (min-width: 2000px)
+        line-height: normal
 
 .subheader h1 
     font-size: 3vw
@@ -114,10 +124,17 @@ $background2: rgba(39,39,39,0.85)
     @media only screen and (max-width: 428px)
         font-size: 0.8rem
 
+#logo-container
+    display: table-cell
+    vertical-align: middle
+
 #logo 
     width: 15%
-    margin-top: 1rem
     opacity: 1
+    @media only screen and (max-width: 780px)
+        margin-top: 1rem
+        opacity: 0
+        +animation('3s linear 3.7s 1 forwards reveal')
     @media only screen and (max-width: 428px)
         width: 25%
         margin-top: 0.5rem
@@ -128,4 +145,3 @@ $background2: rgba(39,39,39,0.85)
     
     100% 
         opacity: 1
-    
